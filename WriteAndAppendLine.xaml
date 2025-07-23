@@ -77,7 +77,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WriteAndAppendLine" sap:VirtualizedContainerService.HintSize="1060,1077" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WriteAndAppendLine" sap:VirtualizedContainerService.HintSize="839,1250" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="blnFileExists" />
     </Sequence.Variables>
@@ -87,7 +87,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[blnFileExists]" sap:VirtualizedContainerService.HintSize="426,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="C:\Users\KGANJI1\Desktop\UiPathTest\TestFolder\Test1.txt" PathType="File" />
-    <If Condition="[blnFileExists]" sap:VirtualizedContainerService.HintSize="426,907" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[blnFileExists]" sap:VirtualizedContainerService.HintSize="426,1080" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,389" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -100,14 +100,15 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,389" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,562" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;file does not exisits, creating a file with the help of write text file &quot;]" />
-          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\KGANJI1\Desktop\UiPathTest\TestFolder\Test1.txt" sap:VirtualizedContainerService.HintSize="382,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[now.ToString]" />
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\KGANJI1\Desktop\UiPathTest\TestFolder\Test1.txt" sap:VirtualizedContainerService.HintSize="382,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[now.ToString]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Test Github&quot;]" />
         </Sequence>
       </If.Else>
     </If>
